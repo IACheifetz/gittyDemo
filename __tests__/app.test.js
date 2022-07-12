@@ -18,7 +18,7 @@ describe('why-i-autha routes', () => {
     const res = await request(app).get('/api/v1/github/login');
 
     expect(res.header.location).toMatch(
-      'https://github.com/login/oauth/authorize?client_id=37e3e485acba5aeec6cc&scope=user&redirect_uri=http://localhost:7890/api/v1/github/login/callback'
+      'https://github.com/login/oauth/authorize?client_id=37e3e485acba5aeec6cc&scope=user&redirect_uri=http://localhost:7890/api/v1/github/callback'
     );
   });
 
